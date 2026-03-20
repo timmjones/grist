@@ -11,6 +11,8 @@ services:
       GRIST_DEFAULT_EMAIL: ${GRIST_DEFAULT_EMAIL}
       GRIST_FORWARD_AUTH_HEADER: X-authentik-email
       GRIST_FORCE_LOGIN: "true"
+      GRIST_NODEMAILER_SENDER: ${GRIST_NODEMAILER_SENDER}
+      GRIST_NODEMAILER_CONFIG: ${GRIST_NODEMAILER_CONFIG}
     volumes:
       - grist-data:/persist
     restart: always
